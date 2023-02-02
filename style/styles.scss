@@ -12,6 +12,7 @@
     height: 100%;
     font-family: Arial, Helvetica, sans-serif;
     background-color: #161a1d;
+    scroll-behavior: smooth;
   }
 
   main{
@@ -59,6 +60,7 @@
     flex-direction: column;
     align-items: center;
     background-color: #202020;
+    
 
     &__head{
         height: 300px;
@@ -241,29 +243,156 @@
             border-radius: 0px;
             background-color: #ffd100;
             border: none;
+        }.btn_explore:hover{
+            cursor: pointer;
         }
     }
 }
 
 header{
-    background-color: #333533;
     margin: 45px;
     margin-top: -20px;
     display: flex;
     justify-content: space-evenly;
-    a{
-        color: white;
-        text-decoration: none;
-    }
+   
     .btn_header{
         background: none;
         border: none;
+        font-size: 24px;
+        color: white;
+        font-weight: bolder;
+        transition: all 0.4s;
     }
     .btn_header:hover{
+        padding: 0px 20px;
         cursor: pointer;
         color: #ffd100;
         text-shadow: 2px 2px 10px #ffd100;
         border-left: 2px solid #ffd100;
         border-right: 2px solid #ffd100;
+    }
+}
+
+.aboutMe{
+    height: 50vh;
+    margin: 0px 45px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 30px;
+    &__img{
+        height: 300px;
+        width: 500px;
+        border-radius: 20px;
+        background-image: url(https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/bojack-horseman-final-1571059533.jpg?crop=0.752xw:1.00xh;0.126xw,0&resize=640:*);
+        background-repeat: no-repeat;
+        background-size:cover;
+        background-position: center center;
+    }
+    &__content{
+        color: white;
+        width: 80%;
+        p{
+            margin-top:40px;
+        }
+        h2{
+            span{
+                color: #ffd100;
+            }
+        }
+    }
+}
+
+.myProjects{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    justify-content: space-evenly;
+    height: 60vh;
+    margin: 45px;
+    &__conteiner{
+        display: flex;
+        gap: 10px;
+        &__face{
+            background:#333533;
+            border-radius: 15px;
+            height: 350px;
+            display: flex;
+            padding: 15px;
+            flex-direction: column;
+            justify-content: space-evenly;
+            h3{
+                color: white;
+                font-size: 20px;
+            }
+            &__content{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 25px;
+                p{
+                    color:#868686;
+                }
+            }
+            
+        }
+        &__csharp{
+            background:#333533;
+            border-radius: 15px;
+            height: 350px;
+            justify-content: space-evenly;
+            display: flex;
+            padding: 15px;
+            flex-direction: column;
+            h3{
+                color: white;
+                font-size: 20px;
+            }
+            &__content{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 25px;
+                p{
+                    color:#868686;
+                }
+            }
+            
+        }
+        &__hollow{
+            background:#333533;
+            border-radius: 15px;
+            height: 350px;
+            display: flex;
+            padding: 15px;
+            flex-direction: column;
+            justify-content: space-evenly;
+            h3{
+                color: white;
+                font-size: 20px;
+            }
+            &__content{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 25px;
+            }
+            p{
+                color:#868686;
+            }
+        }
+    }
+
+    .btn__project{
+        width: 200px;
+        height: 50px;
+        border-radius: 0px;
+        background-color: #ffd100;
+        border: none;
+    }.btn__project:hover{
+        cursor: pointer;
     }
 }
