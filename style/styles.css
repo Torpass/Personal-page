@@ -248,8 +248,9 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 header {
-  margin: 45px;
-  margin-top: -20px;
+  margin-left: 45px;
+  margin-right: 45px;
+  margin-top: -10px;
   display: flex;
   justify-content: space-evenly;
 }
@@ -311,7 +312,7 @@ header .btn_header:hover {
   gap: 10px;
 }
 .myProjects__conteiner__face {
-  background: #333533;
+  background-color: #333533;
   border-radius: 15px;
   height: 350px;
   display: flex;
@@ -334,7 +335,7 @@ header .btn_header:hover {
   color: #868686;
 }
 .myProjects__conteiner__csharp {
-  background: #333533;
+  background-color: #333533;
   border-radius: 15px;
   height: 350px;
   justify-content: space-evenly;
@@ -357,7 +358,7 @@ header .btn_header:hover {
   color: #868686;
 }
 .myProjects__conteiner__hollow {
-  background: #333533;
+  background-color: #333533;
   border-radius: 15px;
   height: 350px;
   display: flex;
@@ -388,4 +389,100 @@ header .btn_header:hover {
 }
 .myProjects .btn__project:hover {
   cursor: pointer;
-}/*# sourceMappingURL=styles.css.map */
+}
+
+/*Footer*/
+.footer {
+  color: white;
+  margin: 45px;
+  margin-bottom: -45px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  gap: 30px;
+}
+.footer h2 span {
+  color: #ffd100;
+}
+.footer__socialConteiner {
+  height: 100px;
+  width: 400px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.footer__socialConteiner__facebook {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  border: 2px solid black;
+  background: #ffd100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer__socialConteiner__facebook img {
+  height: 35px;
+  width: 35px;
+}
+.footer__socialConteiner__instagram {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  border: 2px solid black;
+  background: #ffd100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer__socialConteiner__instagram img {
+  height: 35px;
+  width: 35px;
+}
+.footer__socialConteiner__twitter {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  border: 2px solid black;
+  background: #ffd100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer__socialConteiner__twitter img {
+  height: 35px;
+  width: 35px;
+}
+.footer__socialConteiner__github {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  border: 2px solid black;
+  background: #ffd100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer__socialConteiner__github img {
+  height: 35px;
+  width: 35px;
+}
+.footer__socialConteiner__linkedin {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  border: 2px solid black;
+  background: #ffd100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer__socialConteiner__linkedin img {
+  height: 35px;
+  width: 35px;
+}
+
+/*Footer*//*# sourceMappingURL=styles.css.map */

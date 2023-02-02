@@ -250,8 +250,9 @@
 }
 
 header{
-    margin: 45px;
-    margin-top: -20px;
+    margin-left: 45px;
+    margin-right: 45px;
+    margin-top: -10px;
     display: flex;
     justify-content: space-evenly;
    
@@ -314,7 +315,7 @@ header{
         display: flex;
         gap: 10px;
         &__face{
-            background:#333533;
+            background-color: #333533;
             border-radius: 15px;
             height: 350px;
             display: flex;
@@ -338,7 +339,7 @@ header{
             
         }
         &__csharp{
-            background:#333533;
+            background-color: #333533;
             border-radius: 15px;
             height: 350px;
             justify-content: space-evenly;
@@ -362,7 +363,7 @@ header{
             
         }
         &__hollow{
-            background:#333533;
+            background-color: #333533;
             border-radius: 15px;
             height: 350px;
             display: flex;
@@ -396,3 +397,100 @@ header{
         cursor: pointer;
     }
 }
+
+/*Footer*/
+.footer{
+    color: white;
+    margin: 45px;
+    margin-bottom: -45px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    gap: 30px;
+    h2{
+        span{
+            color: #ffd100;
+        }
+    }
+    &__socialConteiner{
+        height: 100px;
+        width: 400px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        &__facebook{
+            height: 50px;
+            width:50px;
+            border-radius: 50%;
+            border: 2px solid black;
+            background: #ffd100;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            img{
+                height: 35px;
+                width: 35px;
+            }
+        }
+        &__instagram{
+            height: 50px;
+            width:50px;
+            border-radius: 50%;
+            border: 2px solid black;
+            background: #ffd100;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            img{
+                height: 35px;
+                width: 35px;
+            }
+        }
+        &__twitter{
+            height: 50px;
+            width:50px;
+            border-radius: 50%;
+            border: 2px solid black;
+            background: #ffd100;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            img{
+                height: 35px;
+                width: 35px;
+            }
+        }
+        &__github{
+            height: 50px;
+            width:50px;
+            border-radius: 50%;
+            border: 2px solid black;
+            background: #ffd100;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            img{
+                height: 35px;
+                width: 35px;
+            }
+        }
+        &__linkedin{
+            height: 50px;
+            width:50px;
+            border-radius: 50%;
+            border: 2px solid black;
+            background: #ffd100;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            img{
+                height: 35px;
+                width: 35px;
+            }
+        }
+    }
+}
+/*Footer*/
