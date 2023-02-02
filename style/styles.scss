@@ -1,0 +1,269 @@
+/*
+    custom css reset 
+*/
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+
+  * {
+    margin: 0;
+  }
+  html, body {
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #161a1d;
+  }
+
+  main{
+    display: flex;
+  } 
+
+  body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+
+  input, button, textarea, select {
+    font: inherit;
+  }
+
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+
+  #root, #__next {
+    isolation: isolate;
+  }
+/*
+    custom css reset 
+*/
+
+
+
+
+/*
+  Lateral conteiner
+*/
+
+.lateralContainer{
+    margin-left: 8px;
+    margin-top: 8px;
+    height: 100%;
+    width: 285px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #202020;
+
+    &__head{
+        height: 300px;
+        width: 100%;
+        background-color: #333533;
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        &__img{
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background-image: url(https://as01.epimg.net/epik/imagenes/2018/10/02/portada/1538500599_246515_1538500710_noticia_normal_recorte1.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+        }
+        &__name{
+            padding: 10px 0px ;
+            font-weight: bold;
+        }
+        &__text{
+            font-size: 15px;
+            color: #a29999;
+        }
+    }
+
+    &__container{
+        padding: 20px 0px;
+        height: 100%;
+        min-width: 260px;
+        &__personalInformation{
+            font-size: 16px;
+            border-bottom: 3px solid white;
+            color: white;
+            height: 130px;
+            &__information{
+                .data{
+                    font-weight: bold;
+                }
+                .answer{
+                    color: #a29999;
+                }
+                padding-bottom: 10px;
+                display: flex;
+                justify-content: space-between;
+            }
+        }
+        &__languages{
+            border-bottom: 3px solid white;
+            padding:30px 0px;
+            height: 210px;
+            .tittle{
+                font-size: 19px;
+            }
+            color: white;
+            &__container{
+                display: flex;
+                padding-top: 30px;
+                justify-content: space-evenly;
+                
+                &__spanish{
+                    padding: 3px;
+                    height: 50px;
+                    width: 50px;
+                    border: 2px solid #ffd100;
+                    border-radius: 50%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+                .spanish
+                {
+                    label{ font-weight:bold; font-size: 14px; color: white; }
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 13px;
+                }
+                &__english{
+                    height: 50px;
+                    width: 50px;
+                    border-left: 2px solid #ffd100;
+                    border-top: 2px solid #ffd100;
+                    border-radius: 50%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }   
+                .English
+                {
+                    label{ font-weight:bold; font-size: 14px; color: white; }
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 13px;
+                }
+
+                &__portuguese{
+                    padding: 3px;
+                    height: 50px;
+                    width: 50px;
+                    border-top: 2px solid #ffd100;
+                    border-radius: 50%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }  
+                .portuguese
+                {
+                    label{ font-weight:bold; font-size: 14px; color: white; }
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 13px;
+                } 
+                   
+                .percent{
+                    color: white;
+                    font-size: 15px;
+                }
+            }
+        }
+
+        &__coding{
+            border-bottom: 3px solid white;
+            padding:30px 0px;
+            height: 130px;
+            color: white;
+
+        }
+    }
+
+}
+
+/*
+  Lateral conteiner
+*/
+
+.content{
+    width: 80vw;
+    height: 100%;
+}
+.header{
+    width: 100%;
+    height: 50vh;
+    &__image{
+        height: 90%;
+        margin: 45px;
+        border-radius: 5px;
+        background-image:linear-gradient(0deg, rgb(0,0,0, 0.5), rgb(0,0,0,0.7)), url(../img/mapa.png);
+        background-repeat: no-repeat;
+        background-size:cover;
+        background-position: center center;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        padding: 10px 40px ;
+        h1{
+            color: white;
+            font-size: 50px;
+            font-weight: bold;
+        }
+        h2{
+            color: white;
+            .Code{
+                color: #ffd100;
+            }
+        }
+        .btn_explore{
+            width: 200px;
+            height: 50px;
+            border-radius: 0px;
+            background-color: #ffd100;
+            border: none;
+        }
+    }
+}
+
+header{
+    background-color: #333533;
+    margin: 45px;
+    margin-top: -20px;
+    display: flex;
+    justify-content: space-evenly;
+    a{
+        color: white;
+        text-decoration: none;
+    }
+    .btn_header{
+        background: none;
+        border: none;
+    }
+    .btn_header:hover{
+        cursor: pointer;
+        color: #ffd100;
+        text-shadow: 2px 2px 10px #ffd100;
+        border-left: 2px solid #ffd100;
+        border-right: 2px solid #ffd100;
+    }
+}
