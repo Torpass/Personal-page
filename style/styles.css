@@ -1,6 +1,8 @@
 /*
     custom css reset 
 */
+
+
 *, *::before, *::after {
   box-sizing: border-box;
 }
@@ -57,6 +59,8 @@ p, h1, h2, h3, h4, h5, h6 {
   flex-direction: column;
   align-items: center;
   background-color: #202020;
+  position: sticky;
+  top: 0;
 }
 .lateralContainer__head {
   height: 300px;
@@ -282,6 +286,12 @@ header {
   margin-top: -10px;
   display: flex;
   justify-content: space-evenly;
+  position: sticky;
+  top: 0;
+  background-color: #161a1d;
+}
+
+#welcolme {
 }
 header .btn_header {
   background: none;
